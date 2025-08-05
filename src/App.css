@@ -1,0 +1,27 @@
+.responsive-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.laptop-image,
+.phone-image {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+/* Show Laptop Image for screens wider than 768px */
+@media (min-width: 768px) {
+  .laptop-image {
+    display: block;
+  }
+}
+
+/* Show Phone Image for screens smaller than 768px */
+@media (max-width: 767px) {
+  .phone-image {
+    display: block;
+  }
+}
